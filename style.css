@@ -437,7 +437,7 @@ footer .social-links {
 }
 
 /* ---BACK TO TOP------- */
-#backToTopButton {
+.backToTopButton {
   position: fixed;
   bottom: 1rem;
   right: 2.5rem;
@@ -447,12 +447,14 @@ footer .social-links {
 
   transform: translateY(100%);
   transition: 200ms;
+  z-index: 4;
 }
 
-#backToTopButton.show {
+.show {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  z-index: 5;
 }
 
 /* ---RESPONSIVO------- */
