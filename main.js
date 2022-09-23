@@ -3,19 +3,20 @@
 //boolean (true | false )
 // window.addEventListener('scroll', onScroll)
 var backtop = document.querySelector('.backToTopButton')
+var navigation = document.querySelector('#navigation')
 
 
 function onScroll() {
-  showNavOnScroll()
+  showNavOnScroll();
   showBackToTopButtonOnScroll()
 }
-//function showNavOnScroll() {
-//  if (scrollY > 0) {
-//    navigation.classList.add('scroll')
-//  } else {
-//    navigation.classList.remove('scroll')
-//  }
-//}
+function showNavOnScroll() {
+  if (scrollY > 0) {
+    navigation.classList.add('scroll')
+  } else {
+    navigation.classList.remove('scroll')
+  }
+}
 function showBackToTopButtonOnScroll() {
   if (scrollY > 500) {
     backtop.classList.add('show')

@@ -160,7 +160,7 @@ nav .wrapper {
   align-items: center;
   justify-content: space-between;
 }
-nav.scroll {
+.scroll {
   background: var(--primary-color);
 }
 
@@ -441,7 +441,6 @@ footer .social-links {
   position: fixed;
   bottom: 1rem;
   right: 2.5rem;
-
   opacity: 0;
   visibility: hidden;
 
@@ -449,6 +448,7 @@ footer .social-links {
   transition: 200ms;
   z-index: 4;
 }
+
 
 .show {
   opacity: 1;
